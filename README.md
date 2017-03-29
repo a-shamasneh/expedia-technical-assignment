@@ -27,7 +27,7 @@ clone this repo on your device
 
 
 ```
-Open ExpediaDeals Folder and run npm install from terminal 
+ run npm install terminal command 
 ```
 
 ```

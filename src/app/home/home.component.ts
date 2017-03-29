@@ -11,10 +11,9 @@ export class HomeComponent implements OnInit {
   Countries:any=[];  // this array will be All Country with out duplicated value
   constructor(private expediaApi:GetexpediaService) {
   	this.expediaApi.Getdata().subscribe(Hotels=>{
-  		console.log(Hotels)
       this.AllHotels=Hotels;
       for (var i = 0; i < this.AllHotels.length; i++) {
-        // i will use decode url because the url already  encoded  
+        //  used decode url because the url already  encoded  
         this.AllHotels[i].hotelUrls.hotelInfositeUrl=decodeURIComponent(this.AllHotels[i].hotelUrls.hotelInfositeUrl)
         if(this.Countries.indexOf(this.AllHotels[i].destination.country)===-1){
           this.Countries.push(this.AllHotels[i].destination.country)

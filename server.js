@@ -17,20 +17,14 @@ app.get('/api/expedia',function(req,res) {
 	
   	*/
   	// here i will remove deals dont have image
-  	for(var i = 0; i < data.offers.Hotel.length; i++) {
+  	for(var i = 0; i < data.offers.Hotel.length;i++) {
   		if(data.offers.Hotel[i].hotelInfo.hotelImageUrl===''){
-  			console.log('catch');
   			data.offers.Hotel.splice(i,1);
   		}
-
   	}
-        console.log(data.offers.Hotel.length);
   	res.json(data.offers.Hotel);
     });
-
-    
 });
-
 ////////////////*run server*///////////////
 var port = process.env.PORT || 9000;
 app.listen(port);
