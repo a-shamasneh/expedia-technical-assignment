@@ -353,7 +353,7 @@ exports = module.exports = __webpack_require__(46)();
 
 
 // module
-exports.push([module.i, "img {\r\n     width:60%;\r\n    height: 170px;\r\n}\r\n.center{\r\n  text-align: center\r\n}\r\n.col-md-4{\r\n\theight:650px\r\n}\r\n#usd{\r\n\tcolor: #e3e80a;\r\n}", ""]);
+exports.push([module.i, "img {\r\n     width:60%;\r\n    height: 170px;\r\n}\r\n.center{\r\n  text-align: center\r\n}\r\n.col-md-4{\r\n\theight:650px\r\n}\r\n#usd{\r\n\tcolor: #0275d8;\r\n}\r\n#price{\r\n\tcolor: #0275d8;\r\n\tfont-weight: bold;\r\n}", ""]);
 
 // exports
 
@@ -373,14 +373,14 @@ module.exports = "\n<app-home>Loading...</app-home>\n<app-footer></app-footer>"
 /***/ 471:
 /***/ (function(module, exports) {
 
-module.exports = "<footer class=\"footer\">\n  <div class=\"container\">\n    <span class=\"text-muted\">\n      Made with <i class=\"fa fa-heart\" aria-hidden=\"true\" style=\"color: red;\"></i>️ &copy;Ahmad Shamasneh\n    </span>\n  </div>\n</footer>"
+module.exports = "<footer class=\"footer\">\n  <div class=\"container\">\n    <span class=\"text-muted\">\n      Made with &copy;Ahmad Shamasneh\n    </span>\n  </div>\n</footer>"
 
 /***/ }),
 
 /***/ 472:
 /***/ (function(module, exports) {
 
-module.exports = "  <section class=\"jumbotron \">\n<div class=\"container\">\n      <div class=\"row center\">\n        <h1 class=\"jumbotron-heading\">Expedia </h1>\n        <p class=\"lead text-muted\">Deals From Expedia</p>\n      </div>\n      <br>\n        <div class=\"row center\">\n        \t<a href=\"#\" class=\"btn btn-primary\">Choose Country</a>\n          <select col-md-2 class=\"btn btn-secondary\" [(ngModel)]=\"term\">\n          <option>All</option>\n         <option  *ngFor=\"let country of Countries \"\n         >{{country}}</option>\n        </select>\n        </div>\n        <br><br>\n        \t\t<!-- start display deals -->\n        \t\t<div class=\"row\">\n          <div  class=\"col-md-4 center\"  *ngFor=\"let hotel of AllHotels | countryCity: term \"  >\n\n             <img src=\"{{hotel.hotelInfo.hotelImageUrl}}\" class=\"img-responsive\">\n\n            <div class=\"info\">\n            <h3>{{hotel.destination.city}}</h3>\n      <p>Hotel Name:{{hotel.hotelInfo.hotelName}}</p>\n     <p>{{hotel.hotelInfo.description}}</p> \n      <p>Travel Start Date:{{hotel.hotelInfo.travelStartDate}}</p>\n      <p>Travel End Date:{{hotel.hotelInfo.travelEndDate}}</p>\n      <p>Length Of stay:({{hotel.offerDateRange.lengthOfStay}})</p>\n      <p>Total Price:<i class=\"fa fa-usd\" id=\"usd\" aria-hidden=\"true\"></i>{{hotel.hotelPricingInfo.totalPriceValue}}</p>\n      <p><a href=\"{{hotel.hotelUrls.hotelInfositeUrl}}\"\n      class=\"btn btn-primary\" target=\"_blank\">Full Details..</a></p>\n            </div>\n          </div>\n        </div>\n        </div>\n </section>\n\n\n        \n          \n         \n\n    \n      \n   "
+module.exports = "  <section class=\"jumbotron \">\n    <div class=\"container\">\n      <div class=\"row center\">\n        <h1 class=\"jumbotron-heading\">Expedia </h1>\n        <p class=\"lead text-muted\">Deals From Expedia</p>\n      </div>\n      <br>\n      <div class=\"row center\">\n       <a href=\"#\" class=\"btn btn-primary\">Choose Country</a>\n       <select col-md-2 class=\"btn btn-secondary\" [(ngModel)]=\"term\">\n        <option>All</option>\n        <option  *ngFor=\"let country of Countries \"\n        >{{country}}</option>\n      </select>\n    </div>\n    <br><br>\n    <!-- start display deals -->\n    <div class=\"row\">\n      <div  class=\"col-md-4 center\"  *ngFor=\"let hotel of AllHotels | countryCity: term \"  >\n\n       <img src=\"{{hotel.hotelInfo.hotelImageUrl}}\" class=\"img-responsive\">\n\n       <div class=\"info\">\n        <h3>{{hotel.destination.city}}</h3>\n        <p>Hotel Name:{{hotel.hotelInfo.hotelName}}</p>\n        <p>{{hotel.hotelInfo.description}}</p> \n        <p>Travel Start Date:{{hotel.hotelInfo.travelStartDate}}</p>\n        <p>Travel End Date:{{hotel.hotelInfo.travelEndDate}}</p>\n        <p>Length Of stay:({{hotel.offerDateRange.lengthOfStay}})</p>\n        <p>Total Price:&nbsp;<i class=\"fa fa-usd\" id=\"usd\" aria-hidden=\"true\"></i><span id=\"price\">{{hotel.hotelPricingInfo.totalPriceValue}}</span></p>\n        <p><a href=\"{{hotel.hotelUrls.hotelInfositeUrl}}\"\n          class=\"btn btn-primary\" target=\"_blank\">Full Details..</a></p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n\n\n\n\n\n\n\n"
 
 /***/ }),
 

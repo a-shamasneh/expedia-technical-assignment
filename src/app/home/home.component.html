@@ -1,46 +1,45 @@
   <section class="jumbotron ">
-<div class="container">
+    <div class="container">
       <div class="row center">
         <h1 class="jumbotron-heading">Expedia </h1>
         <p class="lead text-muted">Deals From Expedia</p>
       </div>
       <br>
-        <div class="row center">
-        	<a href="#" class="btn btn-primary">Choose Country</a>
-          <select col-md-2 class="btn btn-secondary" [(ngModel)]="term">
-          <option>All</option>
-         <option  *ngFor="let country of Countries "
-         >{{country}}</option>
-        </select>
+      <div class="row center">
+       <a href="#" class="btn btn-primary">Choose Country</a>
+       <select col-md-2 class="btn btn-secondary" [(ngModel)]="term">
+        <option>All</option>
+        <option  *ngFor="let country of Countries "
+        >{{country}}</option>
+      </select>
+    </div>
+    <br><br>
+    <!-- start display deals -->
+    <div class="row">
+      <div  class="col-md-4 center"  *ngFor="let hotel of AllHotels | countryCity: term "  >
+
+       <img src="{{hotel.hotelInfo.hotelImageUrl}}" class="img-responsive">
+
+       <div class="info">
+        <h3>{{hotel.destination.city}}</h3>
+        <p>Hotel Name:{{hotel.hotelInfo.hotelName}}</p>
+        <p>{{hotel.hotelInfo.description}}</p> 
+        <p>Travel Start Date:{{hotel.hotelInfo.travelStartDate}}</p>
+        <p>Travel End Date:{{hotel.hotelInfo.travelEndDate}}</p>
+        <p>Length Of stay:({{hotel.offerDateRange.lengthOfStay}})</p>
+        <p>Total Price:&nbsp;<i class="fa fa-usd" id="usd" aria-hidden="true"></i><span id="price">{{hotel.hotelPricingInfo.totalPriceValue}}</span></p>
+        <p><a href="{{hotel.hotelUrls.hotelInfositeUrl}}"
+          class="btn btn-primary" target="_blank">Full Details..</a></p>
         </div>
-        <br><br>
-        		<!-- start display deals -->
-        		<div class="row">
-          <div  class="col-md-4 center"  *ngFor="let hotel of AllHotels | countryCity: term "  >
-
-             <img src="{{hotel.hotelInfo.hotelImageUrl}}" class="img-responsive">
-
-            <div class="info">
-            <h3>{{hotel.destination.city}}</h3>
-      <p>Hotel Name:{{hotel.hotelInfo.hotelName}}</p>
-     <p>{{hotel.hotelInfo.description}}</p> 
-      <p>Travel Start Date:{{hotel.hotelInfo.travelStartDate}}</p>
-      <p>Travel End Date:{{hotel.hotelInfo.travelEndDate}}</p>
-      <p>Length Of stay:({{hotel.offerDateRange.lengthOfStay}})</p>
-      <p>Total Price:<i class="fa fa-usd" id="usd" aria-hidden="true"></i>{{hotel.hotelPricingInfo.totalPriceValue}}</p>
-      <p><a href="{{hotel.hotelUrls.hotelInfositeUrl}}"
-      class="btn btn-primary" target="_blank">Full Details..</a></p>
-            </div>
-          </div>
-        </div>
-        </div>
- </section>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-        
-          
-         
 
-    
-      
-   
+
+
+
+
+

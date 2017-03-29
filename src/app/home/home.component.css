@@ -9,5 +9,9 @@ img {
 	height:650px
 }
 #usd{
-	color: #e3e80a;
+	color: #0275d8;
+}
+#price{
+	color: #0275d8;
+	font-weight: bold;
 }
