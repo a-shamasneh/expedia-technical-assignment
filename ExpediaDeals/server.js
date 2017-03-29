@@ -10,15 +10,21 @@ app.use(express.static(path.join(__dirname,'dist')));
 ////////////////*Routes configuration *///////////////
 app.get('/api/expedia',function(req,res) {
 	request("https://offersvc.expedia.com/offers/v2/getOffers?scenario=deal-finder&page=foo&uid=foo&productType=Hotel", function(error, response, body) {
-  // console.log(body);
-  res.json(JSON.parse(body))
+  
+  	var data=JSON.parse(body);
+  	/*data now represnet object of objects and i need just offers for hotel 
+  	so i will return key Hotel which mean Array of object
+	
+  	*/
+	console.log(data.offers.Hotel)
+  res.json(data.offers.Hotel)
 });
 
     
 });
 
 ////////////////*run server*///////////////
-var port = process.env.PORT || 4500;
+var port = process.env.PORT || 9000;
 app.listen(port,function(){
 	console.log("server run on port"+port)
 });

@@ -6,11 +6,15 @@ import {GetexpediaService} from './getexpedia.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
+import { CountryCityPipe } from './country-city.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    CountryCityPipe
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,12 @@
-webpackJsonp([1,4],{
+webpackJsonp([2,4],{
 
-/***/ 275:
+/***/ 276:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(257);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(462);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(473);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GetexpediaService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -39,7 +39,7 @@ var GetexpediaService = (function () {
 
 /***/ }),
 
-/***/ 291:
+/***/ 292:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -48,20 +48,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 291;
+webpackEmptyContext.id = 292;
 
 
 /***/ }),
 
-/***/ 292:
+/***/ 293:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(400);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(403);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(406);
 
 
 
@@ -74,7 +74,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 399:
+/***/ 402:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -92,13 +92,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'app works!';
+        this.title = 'Expedia Offers';
     }
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-root',
-            template: __webpack_require__(459),
-            styles: [__webpack_require__(456)]
+            template: __webpack_require__(469),
+            styles: [__webpack_require__(462)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -108,17 +108,19 @@ var AppComponent = (function () {
 
 /***/ }),
 
-/***/ 400:
+/***/ 403:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(370);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(257);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__getexpedia_service__ = __webpack_require__(275);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(399);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_home_component__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(373);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__getexpedia_service__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_home_component__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__footer_footer_component__ = __webpack_require__(404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__country_city_pipe__ = __webpack_require__(491);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -136,6 +138,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var AppModule = (function () {
     function AppModule() {
     }
@@ -143,7 +147,9 @@ var AppModule = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */]
+                __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__footer_footer_component__["a" /* FooterComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__country_city_pipe__["a" /* CountryCityPipe */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -161,12 +167,47 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 401:
+/***/ 404:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getexpedia_service__ = __webpack_require__(275);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FooterComponent = (function () {
+    function FooterComponent() {
+    }
+    FooterComponent.prototype.ngOnInit = function () {
+    };
+    FooterComponent = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
+            selector: 'app-footer',
+            template: __webpack_require__(470),
+            styles: [__webpack_require__(463)]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], FooterComponent);
+    return FooterComponent;
+}());
+//# sourceMappingURL=footer.component.js.map
+
+/***/ }),
+
+/***/ 405:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getexpedia_service__ = __webpack_require__(276);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -181,9 +222,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var HomeComponent = (function () {
     function HomeComponent(expediaApi) {
+        var _this = this;
         this.expediaApi = expediaApi;
-        this.expediaApi.Getdata().subscribe(function (ok) {
-            console.log(ok.offers.Hotel);
+        this.Countries = []; // this array will be All Country with out duplicated value
+        this.expediaApi.Getdata().subscribe(function (Hotels) {
+            console.log(Hotels);
+            _this.AllHotels = Hotels;
+            for (var i = 0; i < _this.AllHotels.length; i++) {
+                // i will use decode url because the url already  encoded  
+                _this.AllHotels[i].hotelUrls.hotelInfositeUrl = decodeURIComponent(_this.AllHotels[i].hotelUrls.hotelInfositeUrl);
+                if (_this.Countries.indexOf(_this.AllHotels[i].destination.country) === -1) {
+                    _this.Countries.push(_this.AllHotels[i].destination.country);
+                }
+            }
         });
     }
     HomeComponent.prototype.ngOnInit = function () {
@@ -191,8 +242,8 @@ var HomeComponent = (function () {
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-home',
-            template: __webpack_require__(460),
-            styles: [__webpack_require__(457)]
+            template: __webpack_require__(471),
+            styles: [__webpack_require__(464)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__getexpedia_service__["a" /* GetexpediaService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__getexpedia_service__["a" /* GetexpediaService */]) === 'function' && _a) || Object])
     ], HomeComponent);
@@ -203,7 +254,7 @@ var HomeComponent = (function () {
 
 /***/ }),
 
-/***/ 402:
+/***/ 406:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -219,10 +270,10 @@ var environment = {
 
 /***/ }),
 
-/***/ 456:
+/***/ 462:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(120)();
+exports = module.exports = __webpack_require__(46)();
 // imports
 
 
@@ -237,15 +288,15 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 457:
+/***/ 463:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(120)();
+exports = module.exports = __webpack_require__(46)();
 // imports
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".footer {\r\n  \r\n  bottom: 0;\r\n  width: 100%;\r\n  height: 60px;\r\n  line-height: 60px;\r\n  background-color: #f5f5f5;\r\n  text-align: center;\r\n}", ""]);
 
 // exports
 
@@ -255,27 +306,93 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 459:
-/***/ (function(module, exports) {
-
-module.exports = "<h1>\n  {{title}}\n</h1>\n<app-home></app-home>"
-
-/***/ }),
-
-/***/ 460:
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  home works!\n</p>\n"
-
-/***/ }),
-
-/***/ 475:
+/***/ 464:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(292);
+exports = module.exports = __webpack_require__(46)();
+// imports
 
+
+// module
+exports.push([module.i, "h1,h2,h3,h4,h5,h6 {font-family: \"Karma\", sans-serif}\r\n.w3-bar-block .w3-bar-item {padding:20px;}\r\n\r\nimg{\r\n\twidth:100%;\r\n\theight: 189px;\r\n}\r\n.center{\r\n\ttext-align: center;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 469:
+/***/ (function(module, exports) {
+
+module.exports = "<h1>\n  {{title}}\n</h1>\n<app-home><i class=\"fa fa-spinner fa-spin fa-3x fa-fw\"></i>\n<span class=\"sr-only\">Loading...</span></app-home>\n<app-footer></app-footer>"
+
+/***/ }),
+
+/***/ 470:
+/***/ (function(module, exports) {
+
+module.exports = "<footer class=\"footer\">\n  <div class=\"container\">\n    <span class=\"text-muted\">\n      Made with <i class=\"fa fa-heart\" aria-hidden=\"true\" style=\"color: red;\"></i>️ &copy;Ahmad Shamasneh\n    </span>\n  </div>\n</footer>"
+
+/***/ }),
+
+/***/ 471:
+/***/ (function(module, exports) {
+
+module.exports = "\n<link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Karma\">\n<p>\n  home works!\n</p>\n<div class=\"container-fluid \">\n      <div class=\"row\">\n        <h1 class=\"jumbotron-heading\">Expedia </h1>\n        <p class=\"lead text-muted\">Deals From Expedia</p>\n      </div>\n      <br>\n        <div class=\"row center\">\n        \t<a href=\"#\" class=\"btn btn-primary\">Choose Country</a>\n          <select col-md-2 class=\"btn btn-secondary\" [(ngModel)]=\"term\">\n          <option>All</option>\n         <option  *ngFor=\"let country of Countries \"\n         >{{country}}</option>\n        </select>\n        </div>\n        </div>\n<!-- First Photo Grid-->\n  <div class=\"w3-row-padding w3-padding-16 w3-center\">\n    <div class=\"w3-quarter\" *ngFor=\"let hotel of AllHotels | countryCity: term \">\n      <img src=\"{{hotel.hotelInfo.hotelImageUrl}}\">\n\n\n      <h3>{{hotel.destination.longName}}</h3>\n      <p>Hotel Name:{{hotel.hotelInfo.hotelName}}</p>\n      <p>{{hotel.hotelInfo.description}}</p>\n      <p>Travel Start Date:{{hotel.hotelInfo.travelStartDate}}</p>\n      <p>Travel End Date:{{hotel.hotelInfo.travelEndDate}}</p>\n      <p>Length Of stay:({{hotel.offerDateRange.lengthOfStay}})</p>\n      <p>Total Price:<i class=\"fa fa-usd\" aria-hidden=\"true\"></i>{{hotel.hotelPricingInfo.totalPriceValue}}</p>\n      <p><a href=\"{{hotel.hotelUrls.hotelInfositeUrl}}\"\n      class=\"btn btn-primary\" target=\"_blank\">Full Details..</a></p>\n\n\n\n\n    </div>\n  </div>"
+
+/***/ }),
+
+/***/ 489:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(293);
+
+
+/***/ }),
+
+/***/ 491:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CountryCityPipe; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CountryCityPipe = (function () {
+    function CountryCityPipe() {
+    }
+    //start filter data 
+    CountryCityPipe.prototype.transform = function (AllHotels, term) {
+        if (term === "All")
+            return AllHotels;
+        if (term === undefined)
+            return AllHotels;
+        return AllHotels.filter(function (hotel) {
+            return hotel.destination.country.includes(term);
+        });
+    };
+    CountryCityPipe = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Pipe */])({
+            name: 'countryCity'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], CountryCityPipe);
+    return CountryCityPipe;
+}());
+//# sourceMappingURL=country-city.pipe.js.map
 
 /***/ })
 
-},[475]);
+},[489]);
 //# sourceMappingURL=main.bundle.js.map

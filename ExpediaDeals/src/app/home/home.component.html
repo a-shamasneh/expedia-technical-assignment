@@ -1,3 +1,42 @@
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
 <p>
   home works!
 </p>
+<div class="container-fluid ">
+      <div class="row">
+        <h1 class="jumbotron-heading">Expedia </h1>
+        <p class="lead text-muted">Deals From Expedia</p>
+      </div>
+      <br>
+        <div class="row center">
+        	<a href="#" class="btn btn-primary">Choose Country</a>
+          <select col-md-2 class="btn btn-secondary" [(ngModel)]="term">
+          <option>All</option>
+         <option  *ngFor="let country of Countries "
+         >{{country}}</option>
+        </select>
+        </div>
+        </div>
+<!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter" *ngFor="let hotel of AllHotels | countryCity: term ">
+      <img src="{{hotel.hotelInfo.hotelImageUrl}}">
+
+
+      <h3>{{hotel.destination.longName}}</h3>
+      <p>Hotel Name:{{hotel.hotelInfo.hotelName}}</p>
+      <p>{{hotel.hotelInfo.description}}</p>
+      <p>Travel Start Date:{{hotel.hotelInfo.travelStartDate}}</p>
+      <p>Travel End Date:{{hotel.hotelInfo.travelEndDate}}</p>
+      <p>Length Of stay:({{hotel.offerDateRange.lengthOfStay}})</p>
+      <p>Total Price:<i class="fa fa-usd" aria-hidden="true"></i>{{hotel.hotelPricingInfo.totalPriceValue}}</p>
+      <p><a href="{{hotel.hotelUrls.hotelInfositeUrl}}"
+      class="btn btn-primary" target="_blank">Full Details..</a></p>
+
+
+
+
+    </div>
+  </div>
