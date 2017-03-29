@@ -47,3 +47,7 @@ run node cluster.js
 
 * **Ahmad Shamasneh** - *Source* - [Ahmad Shamasneh](https://github.com/a-shamasneh)
 
+## Links
+* **heroku ** - *Source* -[expediadeals](https://expediadeals.herokuapp.com/)
+
+* **Github ** - *Source* -[expedia-technical-assignment](https://github.com/a-shamasneh/expedia-technical-assignment)
